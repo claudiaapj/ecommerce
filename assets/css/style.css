@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root{
+--cabecalho: #FFFFFF;
+--azulAlura: #2A7AE4;
+--main: #E5E5E5;
+--footer: #EAF2FD;
+
+}
+
+@font-face{
+  font-family: Raleway;
+  src: url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:wght@400;700&display=swap');
+} 
+header{
+  background-color: var(--cabecalho);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+body{
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  border: 1px solid rgb(49, 45, 45)(49, 45, 45);
+ width: 60%;
+  height: 65px;
+  align-items: center; 
+}
+
+
+.procura{
+  display: flex;
+  background-color: var(--main);
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  width: 393px;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 90px;
+}
+#busca{
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  border: none;
+  height: 32px;
+  width: 260px;
+  outline: 0;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+.procura img{
+  width: 24px;
+  height: auto;
+  margin-right: 3px;
+  opacity: 0.2;
+ 
+}
+.procura button{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.login{
+width: 120px;
+height: 40px;
+border: 1px solid var(--azulAlura);
+color: var(--azulAlura);
+font-weight: bolder;
+background-color: var(--cabecalho);
+cursor: pointer;
+}
+/*****Banner*****/
+#banner{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(/assets/imagem/banner-image.png);
+  width: 100%;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: space-between;
+  gap: 13px;
+  
+}
+#banner h1{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 52px;
+  width: 751px;
+  height: 61px;
+  margin-left: 200px;
+
+}
+#banner p{
+  color: #FFFFFF;
+  width: 751px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 200px;
+}
+
+.botao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azulAlura);
+  width: 130px;
+  height: 51px;
+  align-self: flex-start;
+  margin: 0 0 20px 200px;
+
+}
+.botao button{
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+.container{
+  border: 1px solid rgb(125, 5, 95);
+
+  width: 70%;
+
+ 
+}
