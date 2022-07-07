@@ -136,8 +136,48 @@ cursor: pointer;
 }
 .container{
   border: 1px solid rgb(125, 5, 95);
-
   width: 70%;
+}
 
+.item{
+  display: flex;
+}
+
+.itemProd{
+  width: 176px;
+  height: 174px;
+  align-self: stretch;
+  flex-grow: 1;
  
+}
+
+#produtos{
+  background-color: #E5E5E5;
+  padding-top: 20px;
+ 
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+}
+.title h2{
+  font-weight: 700;
+  font-size: 32px;
+  color: #464646;;
+}
+
+.ver_tudo{
+  display: flex;
+  width: 100px;
+  height: 25px;
+  font-weight: 700;
+  color: #2A7AE4;
+  border: none;
+  background-color: #E5E5E5;
+  cursor: pointer;
+  gap: 10px;
 }
