@@ -317,3 +317,58 @@ footer{
   justify-content: center;
   
 }
+
+/* Seção login */
+.secao{
+  width: 100%;
+  height: auto;
+  padding: 80px 0;
+ 
+
+}
+
+.form-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login legend{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--texto);
+  width:131px;
+  margin-bottom: 15px;
+  
+}
+input::placeholder{
+  opacity: 0.6;
+  padding-left: 5px;
+}
+.form-login input{
+  width: 423px;
+  height: 63.13px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  
+}
+
+.botao-contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azulAlura);
+  color: #FFFFFF;
+  width: 145px;
+  height: 51px;
+  align-self: center;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+textarea:focus, input:focus, select:focus {
+  border: 1px solid var(--azulAlura);
+}
