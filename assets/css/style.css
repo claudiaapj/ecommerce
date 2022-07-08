@@ -8,7 +8,8 @@
 --cabecalho: #FFFFFF;
 --azulAlura: #2A7AE4;
 --main: #E5E5E5;
---footer: #EAF2FD;
+--azulFundo: #EAF2FD;
+--texto: #464646;
 
 }
 
@@ -21,11 +22,19 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 15px;
+  padding: 12px;
 }
+
 body{
   font-family: Raleway;
   font-weight: 400;
+  background-color: var(--main);
+  width: 100%;
+ 
+}
+
+#container{
+  padding: 0 70px 0 70px;
 }
 
 .logo{
@@ -33,7 +42,7 @@ body{
   justify-content: flex-start;
   gap: 20px;
   border: 1px solid rgb(49, 45, 45)(49, 45, 45);
- width: 60%;
+  width: 60%;
   height: 65px;
   align-items: center; 
 }
@@ -108,7 +117,7 @@ cursor: pointer;
 }
 #banner p{
   color: #FFFFFF;
-  width: 751px;
+  width: 100%;
   height: 20px;
   font-weight: 400;
   font-size: 22px;
@@ -134,10 +143,6 @@ cursor: pointer;
   cursor: pointer;
 
 }
-.container{
-  border: 1px solid rgb(125, 5, 95);
-  width: 70%;
-}
 
 .item{
   display: flex;
@@ -152,8 +157,9 @@ cursor: pointer;
 }
 
 #produtos{
-  background-color: #E5E5E5;
+  background-color: var(--main);
   padding-top: 20px;
+  
  
 }
 
@@ -167,7 +173,7 @@ cursor: pointer;
 .title h2{
   font-weight: 700;
   font-size: 32px;
-  color: #464646;;
+  color: var(--texto);
 }
 
 .ver_tudo{
@@ -175,9 +181,139 @@ cursor: pointer;
   width: 100px;
   height: 25px;
   font-weight: 700;
-  color: #2A7AE4;
+  color: var(--azulAlura);
   border: none;
-  background-color: #E5E5E5;
+  background-color: var(--main);
   cursor: pointer;
   gap: 10px;
+}
+
+.descrProd{
+  display: flex;
+  width: 100px;
+  height: 25px;
+  font-weight: 700;
+  color: var(--azulAlura);
+  border: none;
+  background-color: var(--main);
+  cursor: pointer;
+  margin-top: 5px;
+}
+.itemProd h6{
+  color: var(--texto) ;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 5px;
+  
+}
+.itemProd h5{
+  color: var(--texto) ;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+}
+#starWars{
+  width: 100%;
+  height: 320px;
+}
+#consoles{
+  width: 100%;
+  height: 320px;
+}
+
+#diversos{
+  width: 100%;
+  height: 320px;
+  padding-bottom: 25px;
+}
+
+#contato{
+  background-color: var(--azulFundo);
+  display: flex;
+  width: 100%;
+  height: 368px;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  gap: 115px;
+ 
+}
+
+.navegacao a{
+  color: var(--texto);
+
+}
+.navegacao ul{
+  height: 48px;
+  display: flex;
+  align-items: center;
+ 
+}
+.navegacao li{
+  width: 176px;
+  height: 19px;
+}
+
+#form{
+  width: 560px;
+  height: 268px;
+  padding: 5px 0;
+}
+
+#form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+legend{
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  width: 560px;
+  height: 19px;
+  color: var(--texto);
+}
+
+
+.nome{
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  width: 560px;
+  height: 56px;
+  margin-top: 15px;
+}
+
+.mensagem{
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  width: 560px;
+  height: 82px;
+  margin-top: 15px;
+} 
+
+.botao-contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azulAlura);
+  color: #FFFFFF;
+  width: 145px;
+  height: 51px;
+  align-self: flex-start;
+  border: none;
+  margin-top: 16px;
+}
+
+footer{
+  width: 100%;
+  height: 102px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
