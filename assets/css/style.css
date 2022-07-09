@@ -94,6 +94,11 @@ font-weight: bolder;
 background-color: var(--cabecalho);
 cursor: pointer;
 }
+
+.login a{
+  color: var(--azulAlura);
+}
+
 /*****Banner*****/
 #banner{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(/assets/imagem/banner-image.png);
@@ -323,9 +328,23 @@ footer{
   width: 100%;
   height: auto;
   padding: 80px 0;
- 
+}
+
+.logo-login{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  border: 1px solid rgb(49, 45, 45)(49, 45, 45);
+  width: 60%;
+  height: 65px;
+  align-items: center; 
 
 }
+
+#cabec-login{
+  justify-content: space-between;
+}
+
 
 .form-login{
   display: flex;
@@ -348,7 +367,7 @@ input::placeholder{
 }
 .form-login input{
   width: 423px;
-  height: 63.13px;
+  height: 60px;
   margin: 10px 0;
   border-radius: 4px;
   border: none;
@@ -369,6 +388,9 @@ input::placeholder{
   cursor: pointer;
 }
 
-textarea:focus, input:focus, select:focus {
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
   border: 1px solid var(--azulAlura);
+  
 }
