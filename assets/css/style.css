@@ -372,6 +372,7 @@ input::placeholder{
   border-radius: 4px;
   border: none;
   
+  
 }
 
 .botao-contato{
@@ -394,3 +395,73 @@ textarea:focus, input:focus {
   border: 1px solid var(--azulAlura);
   
 }
+/****** Seção cadastro******/
+.menu-adm{
+  width: 149px;
+  height: 40px;
+  border: 1px solid var(--azulAlura);
+ 
+  font-weight: bolder;
+  background-color: var(--cabecalho);
+  cursor: pointer;
+}
+.menu-adm a{
+  color: var(--azulAlura);
+}
+
+.form-cadastro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-cadastro input{
+  width: 559px;
+  height: 56px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--cabecalho);
+  box-shadow: 0px 3px #C8C8C8;
+  
+}
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px solid var(--azulAlura);
+  
+}
+.form-cadastro legend{
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  width: 358px;
+  height: 38px;
+}
+.botao-cadastro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azulAlura);
+  color: #FFFFFF;
+  width: 559px;
+  height: 51px;
+  align-self: center;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+}
+/**********************/
+/* Esconde o input */
+input[type='file'] {
+  width: 559px;
+  height: 56px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--cabecalho);
+  box-shadow: 0px 3px #C8C8C8;
+}
+
+
+
