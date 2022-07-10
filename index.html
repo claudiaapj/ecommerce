@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
     <title>AluraGeek</title>
 </head>
 
-<body>
-    <header>
+<body class="alura">
+    <header class="cabecalho">
         <section class="logo">
             <figure>
                 <img src="assets/imagem/Logo.png" alt="AluraGeek">
@@ -23,7 +24,8 @@
         <button class="login"> <a href="/paginas/login.html" >Login</a> </button>
     </header>
     <main>
-        <section id="banner">
+        <section class="banner">
+          <div class="banner-itens">
             <div>
                 <h1> Dezembro Promocional</h1>
             </div>
@@ -32,193 +34,210 @@
                 <p>
             </div>
             <div class="botao"><button>Ver Consoles</button></div>
+          </div>
         </section>
-        <section id="container">
-            <section id="produtos">
+        <section class="container">
+           
                 <!--******Seção Star Wars ********-->
-                <section id="starWars">
-                    <div class="title">
+                  <section class="star-wars">
+                    <div class="star-wars-title">
                         <h2>
                             Star Wars
                         </h2>
                         <button class="ver_tudo">Ver tudo <img src="assets/imagem/setinha.png" alt=""></button>
                     </div>
-                    <div class="item">
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/caneca_Stormtrooper.jpg" alt="caneca Stormtrooper">
-                            </figure>
-                            <h5>Caneca Stormtrooper</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
+                  </section>
+
+                  <section class="prods">
+                    <div class="prods-item">
+                        <img class="prods-item-img" src="assets/imagem/caneca_Stormtrooper.jpg" alt="caneca Stormtrooper">
+                        <div class="title-prods-item">
+                          <h5>Caneca Stormtrooper</h5>
+                          <h6>R$ 60,00</h6>
                         </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/Darth-Vader.jpg" alt="Darth Vader">
-                            </figure>
+                          <button class="descrProd">Ver produto</button>
+                    </div>
+
+                        <div class="prods-item">
+                          <img class="prods-item-img" src="assets/imagem/Darth-Vader.jpg" alt="Darth Vader">
+                          <div class="title-prods-item">
                             <h5>Darth Vader</h5>
                             <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
+                          </div>
+                          <button class="descrProd">Ver produto</button>
                         </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/papel-yoda.jpg" alt=" Yoda">
-                            </figure>
+                        <div class="prods-item">
+                          <img src="assets/imagem/papel-yoda.jpg" alt=" Yoda">
+                          <div class="title-prods-item">
                             <h5> Fundo Yoda</h5>
                             <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
+                          </div>
+                          <button class="descrProd">Ver produto</button>
                         </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/Stormtrooper.jpg" alt=" Stormtrooper">
-                            </figure>
+
+                        <div class="prods-item">
+                          <img src="assets/imagem/Stormtrooper.jpg" alt=" Stormtrooper">
+                          <div class="title-prods-item">
                             <h5> Stormtrooper</h5>
                             <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
+                          </div>
+                          <button class="descrProd">Ver produto</button>
                         </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/yoda.jpg" alt=" Yoda">
-                            </figure>
+
+                        <div class="prods-item">
+                          <img src="assets/imagem/yoda.jpg" alt=" Yoda">
+                          <div class="title-prods-item">      
                             <h5> Yoda</h5>
                             <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
+                          </div>
+                          <button class="descrProd">Ver produto</button>
                         </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/Darth-Vader.jpg" alt=" Darth Vader">
-                            </figure>
+
+                        <div class="prods-item">
+                          <img src="assets/imagem/Darth-Vader.jpg" alt=" Darth Vader">
+                          <div class="title-prods-item">      
                             <h5> Darth Vader</h5>
                             <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
+                          </div>
+                          <button class="descrProd">Ver produto</button>
                         </div>
-                    </div>
+                    
                 </section>
                 <!--****** Seção Consoles *******-->
-                <section id="consoles">
-                    <div class="title">
+                <section class="consoles">
+                    <div class="consoles-title">
                         <h2>
                             Consoles
                         </h2>
                         <button class="ver_tudo">Ver tudo <img src="assets/imagem/setinha.png" alt=""></button>
                     </div>
-                    <div class="item">
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/xbox.png" alt="Console Xbox">
-                            </figure>
-                            <h5> Xbox</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/Playstation.png" alt=" Playstation">
-                            </figure>
-                            <h5> Playstation</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/nintendo-entertainment.png" alt="  Nitendo Entertainment">
-                            </figure>
-                            <h5> Nitendo Entertainment</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/nitendo.png" alt=" Nitendo">
-                            </figure>
-                            <h5> Nitendo</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/xbox-series.png" alt=" Xbox Series">
-                            </figure>
-                            <h5> Xbox Séries</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/game.png" alt=" Game">
-                            </figure>
-                            <h5> Game</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                    </div>
                 </section>
 
+                    <section class="prods">
+                      <div class="prods-item">
+                          <img class="prods-item-img" src="assets/imagem/xbox.png" alt="Console Xbox">
+                          <div class="title-prods-item">
+                            <h5>Console Xbox</h5>
+                            <h6>R$ 60,00</h6>
+                          </div>
+                            <button class="descrProd">Ver produto</button>
+                      </div>
+  
+                          <div class="prods-item">
+                            <img class="prods-item-img" src="assets/imagem/Playstation.png" alt="Playstation">
+                            <div class="title-prods-item">
+                              <h5>Playstation</h5>
+                              <h6>R$ 60,00</h6>
+                            </div>
+                            <button class="descrProd">Ver produto</button>
+                          </div>
+                          <div class="prods-item">
+                            <img src="assets/imagem/nintendo-entertainment.png" alt=" Nintendo Entertainment ">
+                            <div class="title-prods-item">
+                              <h5> Nintendo Entertainment </h5>
+                              <h6>R$ 60,00</h6>
+                            </div>
+                            <button class="descrProd">Ver produto</button>
+                          </div>
+  
+                          <div class="prods-item">
+                            <img src="assets/imagem/nitendo.png" alt=" Nitendo">
+                            <div class="title-prods-item">
+                              <h5> Nitendo</h5>
+                              <h6>R$ 60,00</h6>
+                            </div>
+                            <button class="descrProd">Ver produto</button>
+                          </div>
+  
+                          <div class="prods-item">
+                            <img src="assets/imagem/xbox-series.png" alt=" Xbox Series">
+                            <div class="title-prods-item">      
+                              <h5> Xbox Series</h5>
+                              <h6>R$ 60,00</h6>
+                            </div>
+                            <button class="descrProd">Ver produto</button>
+                          </div>
+  
+                          <div class="prods-item">
+                            <img src="assets/imagem/game.png" alt=" Game">
+                            <div class="title-prods-item">      
+                              <h5> Game</h5>
+                              <h6>R$ 60,00</h6>
+                            </div>
+                            <button class="descrProd">Ver produto</button>
+                          </div>
+                      
+                  </section>
                 <!--******* Diversos *********-->
-                <section id="diversos">
-                    <div class="title">
+                <section class="diversos">
+                    <div class="diversos-title">
                         <h2>
                             Diversos
                         </h2>
                         <button class="ver_tudo">Ver tudo <img src="assets/imagem/setinha.png" alt=""></button>
                     </div>
-                    <div class="item">
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/camisa-atari.png" alt="Camisa Atari">
-                            </figure>
-                            <h5> Camisa Atari</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/camisa-snes.png" alt=" Camisa SNES">
-                            </figure>
-                            <h5> Camisa SNES</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/Sonic.png" alt=" Sonic">
-                            </figure>
-                            <h5> Sonic </h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/controle-console.png" alt=" Controle Console">
-                            </figure>
-                            <h5> Controle Console</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/oculos-vr.png" alt=" Oculos Vr">
-                            </figure>
-                            <h5> Óculos Vr</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                        <div class="itemProd">
-                            <figure>
-                                <img src="assets/imagem/pikachu.png" alt=" Pikachu">
-                            </figure>
-                            <h5> Pikachu</h5>
-                            <h6>R$ 60,00</h6>
-                            <button class="descrProd">Ver produto</button>
-                        </div>
-                    </div>
                 </section>
+                <section class="prods">
+                  <div class="prods-item">
+                      <img class="prods-item-img" src="assets/imagem/camisa-atari.png" alt="Camisa Atari">
+                      <div class="title-prods-item">
+                        <h5>Camisa Atari</h5>
+                        <h6>R$ 60,00</h6>
+                      </div>
+                        <button class="descrProd">Ver produto</button>
+                  </div>
 
-            </section>
+                      <div class="prods-item">
+                        <img class="prods-item-img" src="assets/imagem/camisa-snes.png" alt=" Camisa SNES">
+                        <div class="title-prods-item">
+                          <h5>Camisa SNES</h5>
+                          <h6>R$ 60,00</h6>
+                        </div>
+                        <button class="descrProd">Ver produto</button>
+                      </div>
+                      <div class="prods-item">
+                        <img src="assets/imagem/Sonic.png" alt=" Sonic">
+                        <div class="title-prods-item">
+                          <h5> Sonic</h5>
+                          <h6>R$ 60,00</h6>
+                        </div>
+                        <button class="descrProd">Ver produto</button>
+                      </div>
+
+                      <div class="prods-item">
+                        <img src="assets/imagem/controle-console.png" alt=" Controle-Console">
+                        <div class="title-prods-item">
+                          <h5> Controle-Console</h5>
+                          <h6>R$ 60,00</h6>
+                        </div>
+                        <button class="descrProd">Ver produto</button>
+                      </div>
+
+                      <div class="prods-item">
+                        <img src="assets/imagem/oculos-vr.png" alt=" Oculos VR">
+                        <div class="title-prods-item">      
+                          <h5> Óculos VR</h5>
+                          <h6>R$ 60,00</h6>
+                        </div>
+                        <button class="descrProd">Ver produto</button>
+                      </div>
+
+                      <div class="prods-item">
+                        <img src="assets/imagem/pikachu.png" alt=" Pikachu">
+                        <div class="title-prods-item">      
+                          <h5> Pikachu</h5>
+                          <h6>R$ 60,00</h6>
+                        </div>
+                        <button class="descrProd">Ver produto</button>
+                      </div>
+                  
+              </section>
+
+           
         </section>
         <!--Seção contato-->
         <section id="contato">
-            <figure>
+            <figure class="img-logo">
                 <img src="assets/imagem/Logo.png" alt="AluraGeek">
             </figure>
             <nav class="navegacao">
@@ -251,10 +270,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="rodape">
+      <div class="conteudo-rodape">
         <p>Desennvolvido por Cláudia Aguilar</p>
         <p>2022</p>
-    </footer>
+      </div>
+      </footer>
 </body>
 
 </html>

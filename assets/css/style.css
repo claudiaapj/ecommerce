@@ -1,3 +1,4 @@
+/*
 *{
   margin: 0;
   padding: 0;
@@ -99,7 +100,7 @@ cursor: pointer;
   color: var(--azulAlura);
 }
 
-/*****Banner*****/
+/*****Banner****
 #banner{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(/assets/imagem/banner-image.png);
   width: 100%;
@@ -323,7 +324,7 @@ footer{
   
 }
 
-/* Seção login */
+/* Seção login 
 .secao{
   width: 100%;
   height: auto;
@@ -386,7 +387,7 @@ input::placeholder{
   align-self: center;
   border: none;
   margin-top: 16px;
-  cursor: pointer;
+
 }
 
 textarea:focus, input:focus {
@@ -395,7 +396,7 @@ textarea:focus, input:focus {
   border: 1px solid var(--azulAlura);
   
 }
-/****** Seção cadastro******/
+/****** Seção cadastro*****
 .menu-adm{
   width: 149px;
   height: 40px;
@@ -451,8 +452,8 @@ textarea:focus, input:focus {
   margin-top: 16px;
   cursor: pointer;
 }
-/**********************/
-/* Esconde o input */
+/*********************
+/* Esconde o input 
 input[type='file'] {
   width: 559px;
   height: 56px;
@@ -463,5 +464,5 @@ input[type='file'] {
   box-shadow: 0px 3px #C8C8C8;
 }
 
-
+*/
 

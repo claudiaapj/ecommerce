@@ -1,0 +1,362 @@
+:root{
+  --branco: #FFFFFF;
+  --azulAlura: #2A7AE4;
+  --main: #E5E5E5;
+  --azulFundo: #EAF2FD;
+  --texto: #464646;
+  
+  }
+  
+  @font-face{
+    font-family: Raleway;
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:wght@400;700&display=swap');
+  }
+  header{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    
+  }
+  .alura {
+    background-color: var(--main);
+    display: grid;  
+    font-family: Raleway;
+    grid-template-areas: 
+        "cabecalho"
+        "banner"
+        "conteudo"
+        "contato"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 105px 352px auto 368px auto; 
+}
+
+
+  /*******Cabeçalho********/
+  .cabecalho{
+    grid-area: cabecalho;
+  }
+  .logo{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    border: 1px solid rgb(49, 45, 45)(49, 45, 45);
+    width: 60%;
+    height: 65px;
+    align-items: center; 
+  }
+ 
+  .procura{
+    display: flex;
+    background-color: var(--main);
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 393px;
+    padding: 5px 10px;
+    align-items: center;
+    gap: 90px;
+  }
+  #busca{
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    border: none;
+    height: 32px;
+    width: 260px;
+    outline: 0;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 14px;
+  
+  }
+  .procura img{
+    width: 24px;
+    height: auto;
+    margin-right: 3px;
+    opacity: 0.2;
+   
+  }
+  .procura button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .login{
+  width: 120px;
+  height: 40px;
+  border: 1px solid var(--azulAlura);
+  color: var(--azulAlura);
+  font-weight: bolder;
+  background-color: var(--cabecalho);
+  cursor: pointer;
+  }
+  
+  .login a{
+    color: var(--azulAlura);
+  }
+
+  
+
+/****banner*****/
+.banner{
+  display: grid;
+  grid-area: banner;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(/assets/imagem/banner-image.png);
+  grid-template-columns: auto;
+  grid-template-rows:  352px ; 
+
+  
+}
+.banner-itens{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: space-between;
+  gap: 13px;
+}
+
+.banner h1{
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 52px;
+  width: 751px;
+  height: 61px;
+  margin-left: 200px;
+
+}
+.banner p{
+  color: #FFFFFF;
+  width: 100%;
+  height: 20px;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 200px;
+}
+.botao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azulAlura);
+  width: 130px;
+  height: 51px;
+  align-self: flex-start;
+  margin: 0 0 20px 200px;
+
+}
+.botao button{
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+/*****conteudo****/
+#container{
+  display: grid;
+  grid-area: conteudo;
+  grid-template-areas:
+  "produtos-star"
+  "produtos-console"
+  "produdtos-diversos";
+  grid-template-columns: auto;
+  grid-template-rows: 33.33% 33.33% 33.33%; 
+  height: calc(100vh - 825px);
+  
+}
+.produtos-star{
+  display: grid;
+  grid-area: produtos-star;
+  grid-template-areas:
+  "star-wars"
+  "prods";
+  grid-template-columns: auto;
+  grid-template-rows: 50% 50%; 
+}
+.star-wars{
+  display: grid;
+  grid-area: star-wars;
+  height: 65px;
+  
+}
+.star-wars-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+}
+.star-wars-title h2{
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--texto);
+  display: flex;
+  align-self: center;
+}
+
+.ver_tudo{
+  display: flex;
+  width: 100px;
+  height: 25px;
+  font-weight: 700;
+  color: var(--azulAlura);
+  border: none;
+  background-color: var(--main);
+}
+
+.prods{
+  grid-area: prods;
+  display: grid;
+  height: 28  0px;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  
+}
+.prods-item{
+  display: grid;
+
+
+}
+.prods-item-img{
+  width: 176px;
+  height: 174px;
+}
+.descrProd{
+  width: 100px;
+  height: 25px;
+  font-weight: 700;
+  color: var(--azulAlura);
+  border: none;
+  background-color: var(--main);
+  cursor: pointer;
+  margin-top: 5px;
+}
+.title-prods-item h6{
+  color: var(--texto) ;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 5px;
+  width: 176px;
+  height: 19px;
+}
+.title-prods-item h5{
+  color: var(--texto) ;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+  width: 176px;
+  height: 16px;
+}
+
+
+/******console*****/
+.consoles, .diversos{
+  display: grid;
+  grid-area: star-wars;
+  height: 65px;
+}
+.consoles-title, .diversos-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+}
+.consoles-title  h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--texto);
+    display: flex;
+    align-self: center;
+  }
+
+
+  /*****Diversos*****/
+
+  .diversos-title  h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--texto);
+    display: flex;
+    align-self: center;
+  }
+/*****Contato*****/
+#contato{
+  display: grid;
+  grid-area: contato;
+  grid-template-areas: 
+  "alura"
+  "links"
+  "formulario";
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: auto;
+}
+.img-logo{
+  grid-area: alura; 
+
+}
+.navegacao ul{
+  grid-area: links;
+}
+
+
+ 
+  
+  #form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  legend{
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    width: 560px;
+    height: 19px;
+    color: var(--texto);
+  }
+  
+  
+  .nome{
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    width: 560px;
+    height: 56px;
+    margin-top: 15px;
+  }
+  
+  .mensagem{
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    width: 560px;
+    height: 82px;
+    margin-top: 15px;
+  } 
+  
+  .botao-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azulAlura);
+    color: #FFFFFF;
+    width: 145px;
+    height: 51px;
+    align-self: flex-start;
+    border: none;
+    margin-top: 16px;
+  }
+
+
+
+  /*****rodape******/
+  
